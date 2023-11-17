@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Social-Media-Icons-Glossy-Social-HTML5.ico" type="image/x-icon">
+    <title>Capítulo 8</title>
+    <style>
+        mark {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatação de textos</h1>
+    <p><strong>Conjunto das aulas do capítulo 8</strong> </p>
+    <hr>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito/Destaques</h2>
+    <p>Termos  podem ser colocados em Negrito ou Destaque <b>detsa maneira</b> utilizando a Tag <mark>&ltb&gt</mark> de maneira não semântica </p>
+    <p>Mas lembrando que em HTML5 sempre se deve dar a preferência ao sentido, ou seja devemos colocar um termo  em Negrito <strong>desta maneira</strong> utilizando a Tag <mark>&ltstrong&gt</mark> que é de maneira semântica</p>
+    <h2>Itálico/Ênfase</h2>
+    <p>Do mesmo modo com os termos em Itálico devemos priorizar a forma <em>semântica</em> com a Tag <mark>&ltem&gt</mark> do que a forma <i>não semântica</i> com a Tag <mark>&lti&gt</mark></p>
+    <hr>
+    <h1>Fomatações adicionais em HTML</h1>
+    <h2>Texto Marcado</h2>
+    <p>podemos criar também um <mark style="background-color: lime;">texto marcado</mark> com a tag <mark>&ltmark&gt</mark></p> 
+    <h2>Texto Inserido e Deletado</h2>
+    <p>Podemos utilizar a Tag <mark>&ltdel&gt</mark> para indicar que um texto <del>pode até ser lido mas desconsiderado</del> ou utilizar a Tag <mark>&ltins&gt</mark> para indicar que aquele <ins>trecho deve ser lido com mais atenção</ins>o</p>
+    <h2>texto Sobrescrito</h2>
+    <p>Para inserir coisas como x<sup>20</sup>+3 Tag <mark>&ltsup&gt</mark></p>
+    <h2>Testo Subscrito</h2>
+    <p>Para inserir coisa como H<sub>2</sub>O Tag <mark>&ltsub&gt</mark></p>
+    <hr>
+    <h1>Códigos, Citações e Abreviações</h1>
+    <h2>Código-Fonte e Pré-Formatação</h2>
+    <p>O comando <code>document.getElementById('teste') é escrito em JavaScript</code></p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+    print(f'O número {num} é PAR')
+    else:
+    print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações Simples</h2>
+        <p>Como diria o pai de um amigo: <q>O cumputador é um burro muito rápido</q></p>
+        <h2>Citações Completas</h2>
+        <p>Segundo Jeff Noble, no seu livro HTML para leigos</p>
+        <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&pg=PA17&dq=HTML&hl=pt-BR&sa=X&ved=0ahUKEwjH5-PevNboAhVNIbkGHcoxCOgQ6AEIOjAC#v=onepage&q=HTML&f=false">
+            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+        </blockquote>
+        <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="HyperText Markup Language ">HTML</abbr> e <abbr title="Cascadind Style Sheets">CSS</abbr> estou adorando</p>
+    
+
+</body>
+</html>

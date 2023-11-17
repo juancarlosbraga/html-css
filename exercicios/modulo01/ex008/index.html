@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Social-Media-Icons-Glossy-Social-HTML5.ico" type="image/x-icon">
+    <title>Capítulo 11</title>
+</head>
+<body>
+    <h1>Midias em HTML</h1>
+    <ul>
+        <li>Imagens Dinâmicas</li>
+        <li>Aúdios</li>
+        <li>Videos</li>
+    </ul>
+    <hr>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Imagens Dinâmicas são imagens que se adaptam de acordo com o tamanho da tela em que o usuario esta acessando o site</p>
+    <p>EX:</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flixivel">
+    </picture>
+    <hr>
+    <h1>Aúdios</h1>
+    <p>Testando o funcionamento de aúdios em HTML5</p>
+    <p>EX:</p>
+    <audio preload="metadata" controls>
+        <source src="midias/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midias/happy-mistake.ogg" type="audio/ogg">
+        <source src="midias/happy-mistake.wav" type="audio/wav">
+        <p>Seua navegador não tem suporte para audio <a href="midias/happy-mistake.mp3" download="audio/mpeg">Clique Aqui</a> para baixar o arquivo</p>
+    </audio>
+    <hr>
+    <h1>Videos</h1>
+    <p>Videos podem ser hospedados tanto de maneira local como de maneira eterna</p>
+    <h2>Videos Hospedados Localmente</h2>
+    <p>Tomar cuidado com videos hospedados localmente pois podem consumir muitos dados</p>
+    <p>EX:</p>
+    <video width="500" poster="imagens/limoes-capa.png" controls>
+        <source src="videos/meu-video.mp4" type="video/mp4">
+        <source src="videos/meu-video.m4v" type="video/mp4">
+        <source src="videos/meu-video.webm" type="video/webm">
+        <source src="videos/meu-video.ogv" type="video/ogg">
+    </video>
+    <h2>Videos Hospedados Externamente</h2>
+    <h3>Videos incoporados atraves do YouTube</h3>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/b9JEhQbpUsA?si=lTZiTk3d9pCqk-cv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h3>Videos Incorporados atraves do Vimeo</h3>
+    <iframe src="https://player.vimeo.com/video/257399106?h=b4f1975b25&portrait=0" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    
+</body>
+</html>
